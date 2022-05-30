@@ -30,3 +30,4 @@ Interactive flash card webpage that provides functionality for users to create, 
 - Home
 - About us
 - Study Cards
+

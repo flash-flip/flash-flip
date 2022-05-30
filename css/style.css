@@ -1,0 +1,53 @@
+html {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* navbar styling */
+
+body {
+
+}
+
+header {
+  border: red 1px solid;
+  width: 100%;
+  height: 50px;
+}
+
+nav {
+  border: black 1px solid;
+  display: flex; 
+  width: 100%;
+  height: 100%;
+}
+
+nav div:first-child{
+  border: black 1px solid;
+  width: 10%;
+  margin: auto 0;
+  margin-left: 1%;
+  font-size: 1.5em;
+}
+
+nav ul {
+  border: black 1px solid;
+  display: flex;
+  width: 40%;
+  margin-left: 5px;
+}
+
+nav li {
+  border: black 1px solid;
+  margin: auto;
+}
+
+nav div:last-child{
+  border: black 1px solid;
+  margin-left: auto;
+  margin-right: 1%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5px 10px;
+}
+
