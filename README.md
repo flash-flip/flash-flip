@@ -31,3 +31,14 @@ Interactive flash card webpage that provides functionality for users to create, 
 - About us
 - Study Cards
 
+## Completed
+- Framework for Home page
+- Added Logo pictures (optional if you want to use)
+- basic framework for flashflip page
+
+## Suggestion: 
+  - separate CSS stylesheets for each page - better readability and organization
+  - On flash-flip.html, the p tag with id=deck-title
+    - is it possible to make the title of this change depending which deck the user chooses?
+    - should we use a generic title for the page instead of the title of the deck?
+    - possibly use literal notation in app.js then add text content to element to create a dynamic title for page
