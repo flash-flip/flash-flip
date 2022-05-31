@@ -14,10 +14,14 @@ console.log(retrievedKeys);
 let parsedKeys = JSON.parse(retrievedKeys);
 console.log(parsedKeys);
 let retrievedDecks = [];
-for(let i=0;i<parsedKeys.length;i++){
-  retrievedDecks.push(JSON.parse(localStorage.getItem(parsedKeys[i])));
-}
-console.log(retrievedDecks);
+
+if(retrievedKeys){
+  for(let i=0;i< parsedKeys.length;i++){
+    retrievedDecks.push(JSON.parse(localStorage.getItem(parsedKeys[i])));
+    keys.push(parsedKeys[i]);
+  }
+  console.log(retrievedDecks);
+} 
 
 //constructor function - make new deck
 function Card(front,back){
@@ -30,9 +34,10 @@ function Card(front,back){
 function handleAddCard(event){
   event.preventDefault();
 
-  new Card(event.target.front.value,event.target.back.value);
+  new Card(event.target.front.value, event.target.back.value);
   cardForm.reset();
 }
+
 function handleDeckName(event){
   event.preventDefault();
 
