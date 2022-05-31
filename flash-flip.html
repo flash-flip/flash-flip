@@ -13,7 +13,7 @@
     <nav class="navbar">
       <div>FlashFlip</div>
       <ul>
-        <li><a href="./index.html"></a>Home</li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./about-us.html">About Us</a></li>
         <li><a href="#library">Your Library</a></li>
       </ul>
@@ -26,24 +26,32 @@
     <section class="flashcard-container">
   <!-- sidebar -->
       <div class="sidebar">
-        <p>STUDY</p>
-        <ul>
-          <li>Flashcards</li>
-          <li>Learn</li>
-          <li>Write</li>
-          <li>Spell</li>
-          <li>Test</li>
+        <p>Decks</p>
+        <ul id="deck-list">
         </ul>
-        <p>Play</p>
-        <ul>
-          <li>Match</li>
-          <li>Gravity</li>
-        </ul>
+        <form id="load-deck">
+          <fieldset>
+            <label for="name">Deck Name:</label>
+            <input type="text" id="name" name="name">
+          </fieldset>
+          <button type="submit">Load Deck</button>
+        </form>
       </div>
 
   <!-- Flash card will display here -->
-      <div class="flashcard">
-        <div>FlashCard Demo</div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div id="front-card" class="flip-card-front"></div>
+          <div id="back-card" class="flip-card-back"></div>
+        </div>
+        <section id="button-bar">
+          <div>
+            <button id="left-arrow" value="left-arrow"><=</button>
+          </div>
+          <div>
+            <button id="right-arrow" value="right-arrow">=></button>
+          </div>
+        </section>
       </div>
     </section>
     <div class="grid-three">
@@ -66,6 +74,6 @@
   <footer>
 
   </footer>
-  <script src="app.js"></script>
+  <script src="js/flip.js"></script>
 </body>
 </html>

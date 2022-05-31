@@ -113,7 +113,54 @@ div.sidebar{
   width: 25%;
 }
 
-div.flashcard{
+/* div.flashcard{
   border: 1px red solid;
   width: 75%;
+} */
+
+/* Flash card Flip */
+
+.flip-card {
+  background-color: transparent;
+  width: 75%;
+  min-height: 400px;
+  perspective: 1000px;
+  border: 1px red solid;
+}
+
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6f7fb;
+  color: #09092d;
+}
+
+.flip-card-back {
+  background-color: #f6f7fb;
+  color: #09092d;
+  transform: rotateY(180deg);
+}
+
+/* Button Bar */
+section #button-bar{
+  display: flex;
+  justify-content: center;
 }
