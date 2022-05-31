@@ -4,8 +4,8 @@ html {
 }
 
 body {
-  /* background-color: #09092d; */
-  /* color: #f6f7fb; */
+  background-color: #09092d;
+  color: #f6f7fb;
   margin: 10px auto;
   max-width: 900px;
 }
