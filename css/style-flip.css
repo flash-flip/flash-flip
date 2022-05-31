@@ -1,14 +1,16 @@
+/* page layout */
+
 html {
 }
 
-/* navbar styling */
-
 body {
   background-color: #09092d;
-  /* color: #f6f7fb; */
+  color: #f6f7fb;
   margin: 10px auto;
   max-width: 900px;
 }
+
+/* navbar styling */
 
 header {
   border-bottom: gray 1px solid;
@@ -97,70 +99,21 @@ nav div:last-child:hover{
   background-color: #1a29b9;
 }
 
-/* Home Page Logo/Intro */
+/* FlashCard & Sidebar Container */
 
-section.logo{
+section.flashcard-container{
   margin-top: 30px;
-  border: grey 1px dashed;
+  border: 1px black solid;
   display: flex;
-}
-
-section.logo b{
-  margin-bottom: 30px;
-}
-
-section.logo p{
-  font-size: 1.75em;
-  color:#f6f7fb;
-  margin: auto 0;
-  margin-left: 30px;
-  width: 50%;
-}
-
-  section.logo b{
-    color:#ffcd1f;
-  }
-
-section.logo img{
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-/* Library of decks */
-
-#library {
-  /* border: black 1px solid; */
-}
-
-#library p{
-  margin-top: 20px;
-  margin-bottom: 5px;
-  font-size: 20px;
-}
-
-.study-decks {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 15px;
-}
-
-figure.study-decks div{
-  border: black 1px solid;
-  text-align: left;
-  padding: 60px 30px;
-  border-radius: 5px;
-  background-color: #2e3856;
-  color:#f6f7fb;
-}
-
-/* Create Decks Form */
-
-.form {
-  border: black 1px solid;
-  margin-top: 20px;
   min-height: 400px;
-  background-color: #2e3856;
-  color:#f6f7fb;
+}
+
+div.sidebar{
+  border: 1px blue solid;
+  width: 25%;
+}
+
+div.flashcard{
+  border: 1px red solid;
+  width: 75%;
 }
