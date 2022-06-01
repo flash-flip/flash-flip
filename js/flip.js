@@ -3,6 +3,7 @@ let frontCard = document.getElementById('front-card');
 let backCard = document.getElementById('back-card');
 let deckList = document.getElementById('deck-list');
 let loadDeck = document.getElementById('load-deck');
+let flipCard = document.querySelector('.flip-card-inner');
 
 //access local storage
 let retrievedKeys = localStorage.getItem('keys');
@@ -70,7 +71,11 @@ function handleSubmit(e){
   }
 }
 
-// Event Listeners
+function handleToggle() {
+  flipCard.classList.toggle('is-flipped');
+}
 
+// Event Listeners
 buttons.addEventListener('click', handleClick);
 loadDeck.addEventListener('submit', handleSubmit);
+flipCard.addEventListener('click', handleToggle)
