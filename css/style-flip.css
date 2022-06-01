@@ -138,7 +138,7 @@ div.sidebar{
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 .flip-card-front, .flip-card-back{
@@ -156,7 +156,7 @@ div.sidebar{
 .flip-card-back {
   background-color: #f6f7fb;
   color: #09092d;
-  transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
 
 /* Button Bar */

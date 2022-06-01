@@ -6,9 +6,8 @@ let loadDeck = document.getElementById('load-deck');
 
 //access local storage
 let retrievedKeys = localStorage.getItem('keys');
-// console.log(retrievedKeys[0]);
 let parsedKeys = JSON.parse(retrievedKeys);
-console.log(parsedKeys);
+
 let retrievedDecks = [];
 
 if(retrievedKeys){
@@ -36,7 +35,7 @@ let buttons = document.getElementById('button-bar');
 function handleClick(e){
   let max = retrievedDecks[currentDeck].length - 1;
   let min = 0;
-console.log(cardCounter);
+  console.log(cardCounter);
     // display index
     frontCard.textContent = retrievedDecks[currentDeck][cardCounter].front;
     backCard.textContent = retrievedDecks[currentDeck][cardCounter].back;
