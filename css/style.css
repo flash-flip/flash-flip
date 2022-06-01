@@ -116,6 +116,26 @@ section.logo img{
   margin: 0 auto;
 }
 
+.form {
+  /* border: black 1px solid; */
+  background-color: #2e3856;
+  color:#f6f7fb;
+  margin-top: 20px;
+  min-height: 250px;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+form {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.card-form {
+  padding-top: 10px;
+}
+
 /* footer */
 footer {
   display: flex;
