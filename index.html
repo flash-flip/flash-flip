@@ -15,10 +15,9 @@
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about-us.html">About Us</a></li>
-        <li><a href="#library">Your Library</a></li>
       </ul>
       <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
-      <div><a href="#form">Create +</a></div>
+      <div><a href="#card-form">Create +</a></div>
     </nav>
   </header>
   <main>
@@ -29,7 +28,7 @@
       </p>
       <img src="./img/home-logo.png">
     </section>
-    <!-- previous decks -->
+    <!-- previous decks
     <section id="library">
       <p>Start Studying</p>
       <figure class="study-decks">
@@ -40,30 +39,40 @@
         <div>Default Deck</div>
         <div>Default Deck</div>
       </figure>
-    </section>
+    </section> -->
     <!-- Create Cards form -->
-    <div class="form">Create Decks Form will go here</div>
-    <form id="card-form">
-      <fieldset>
-        <legend>Create New Deck</legend>
-        <label for="front">Front of card:</label>
-        <input type="text" name="front" id="front">
-        <label for="back">Back of card:</label>
-        <input type="text" name="back" id="back">
-      </fieldset>
-      <button type="submit">Add Card</button>
-    </form>
-    <form id="deck-name">
-      <fieldset>
-        <legend>Finish Deck</legend>
-        <label for="title">Deck Name:</label>
-        <input type="text" name="title" id="title">
-      </fieldset>
-      <button type="submit">Create Deck</button>
-    </form>
+    <div class="form">
+      <form class="card-form">
+        <fieldset>
+          <legend>Create New Deck</legend><br>
+          <label for="front">Front of card:</label>
+          <input type="text" name="front" id="front"><br><br>
+          <label for="back">Back of card:</label>
+          <input type="text" name="back" id="back"><br>
+        </fieldset><br>
+        <button type="submit">Add Card</button>
+      </form><br>
+      <form class="deck-name">
+        <fieldset>
+          <legend>Finish Deck</legend><br>
+          <label for="title">Deck Name:</label>
+          <input type="text" name="title" id="title"><br><br>
+        </fieldset>
+        <button type="submit">Create Deck</button>
+      </form>
+    </div>
+    
   </main>
   <footer>
-
+    <p>&copy;FlashFlip 2022</p>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+      </ul>
+      <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
+      <div><a href="./index.html#card-form">Create +</a></div>
+    </nav>
   </footer>
   <script src="js/app.js"></script>
 </body>

@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Deck Viewer</title>
 </head>
 <body>
   <header>
@@ -16,14 +16,13 @@
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about-us.html">About Us</a></li>
-        <li><a href="#library">Your Library</a></li>
       </ul>
       <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
-      <div><a href="#form">Create +</a></div>
+      <div><a href="./index.html#card-form">Create +</a></div>
     </nav>
   </header>
   <main>
-    <p id="deck-title">Title Demo</p>
+    <h1 id="deck-title">Title Demo</h1>
     <section class="flashcard-container">
   <!-- sidebar -->
       <div class="sidebar">
@@ -53,6 +52,7 @@
           <div>
             <button id="left-arrow" value="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
           </div>
+          <div id="tracker"></div>
           <div>
             <button id="right-arrow" value="right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
@@ -77,7 +77,15 @@
 
   </main>
   <footer>
-
+    <p>&copy;FlashFlip 2022</p>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+      </ul>
+      <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
+      <div><a href="./index.html#card-form">Create +</a></div>
+    </nav>
   </footer>
   <script src="js/flip.js"></script>
 </body>

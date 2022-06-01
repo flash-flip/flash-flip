@@ -6,8 +6,8 @@
 - Elaine Huynh
 - Alec Torres
 
-## Description 
-Interactive flash card webpage that provides functionality for users to create, edit, and study decks. Decks will be saved so user can return to continue studying past made decks.
+## Description
+Our website, FlashFlip, was made for anyone who wants to learn and memorize something through the use of fladhcards. Users are able to create their own custom deck of flashcards. These decks are able to be saved and revisited but cannot be edited once made. When a deck is chosen the flashcards can be flipped from front to back like regular flashcards and there is also a button that allows you to flip forward and backward through the deck. 
 
 ## Color Palette
 - Background Colors
@@ -42,3 +42,13 @@ Interactive flash card webpage that provides functionality for users to create, 
     - is it possible to make the title of this change depending which deck the user chooses?
     - should we use a generic title for the page instead of the title of the deck?
     - possibly use literal notation in app.js then add text content to element to create a dynamic title for page
+
+## Home Page
+Has a header with links to the other pages and other parts of the home page. There is an ad for an upgraded version of FlashFlip. Under that is the section containing the form to create your own flashcards and decks. 
+
+## Study Page
+The study page has links to the home page and about us page at the top in the header. The main content of the page is the flashcards. It holds all of the decks a user creates and allows them to access them and go left and right through their decks. 
+
+## About Us page
+The about us page contains pictures of us four authors/creators of the website. We also have our bios alternating to the left and right of the the images. It also will contain all of our contact information. 
+
