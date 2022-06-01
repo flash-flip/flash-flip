@@ -108,7 +108,7 @@ section.flashcard-container{
 }
 
 div.sidebar{
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
   width: 25%;
 }
 
@@ -119,10 +119,16 @@ div.sidebar{
 
 /* Flash card Flip */
 
+#deck-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .flash-card-container {
   width: 70%;
   height: 350px;
   margin: auto;
+  margin: none;
 }
 
 .flip-card {
@@ -193,3 +199,62 @@ div.sidebar{
   background-color:#2e3856;
   color: #f6f7fb;
 }
+
+/* Side bar */
+
+.sidebar {
+  background-color: #2e3856;
+  border-radius: 5px;
+}
+
+.sidebar p{
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+ul {
+  margin: 0 1rem;
+}
+
+li {
+  font-size: 0.75rem;
+  margin: 1rem 0;
+  border-bottom:#09092d 0.5px solid;
+  padding-bottom: 1rem;
+  color: #f6f7fb;
+}
+
+/* Search Form */
+form {
+  margin: 4rem 0;
+  min-width: none;
+}
+
+label {
+  margin-left: 2.5rem;
+}
+
+#name {
+  width: 80%;
+  height: 1.5rem;
+  background-color: #09092d;
+  border: none;
+  color:#f6f7fb;
+}
+
+.search-bar{
+  display: flex;
+  margin:0 1rem;
+}
+
+.deck-btn {
+  background-color:#4255ff;
+  border: none;
+  color:#f6f7fb;
+  box-shadow: 1px 1px 1px 1px #09092d;
+}
+
+  .deck-btn:hover{
+    background-color: #1a29b9;
+    cursor: pointer;
+  }

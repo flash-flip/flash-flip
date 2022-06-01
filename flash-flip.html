@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style-flip.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,15 +27,17 @@
     <section class="flashcard-container">
   <!-- sidebar -->
       <div class="sidebar">
-        <p>Decks</p>
+        <p>FlashDecks</p>
         <ul id="deck-list">
         </ul>
         <form id="load-deck">
           <fieldset>
-            <label for="name">Deck Name:</label>
-            <input type="text" id="name" name="name">
+            <label for="name">Choose a deck</label><br>
+            <div class="search-bar">
+              <input type="text" id="name" name="name">
+              <button class="deck-btn" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
           </fieldset>
-          <button type="submit">Load Deck</button>
         </form>
       </div>
 
@@ -48,26 +51,26 @@
         </div>
         <section id="button-bar">
           <div>
-            <button id="left-arrow" value="left-arrow"><=</button>
+            <button id="left-arrow" value="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
           </div>
           <div>
-            <button id="right-arrow" value="right-arrow">=></button>
+            <button id="right-arrow" value="right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </section>
       </div>
     </section>
     <div class="grid-three">
  <!-- table to view deck key/value -->
-      <p>Terms in this set</p>
+      <!-- <p>Terms in this set</p>
       <div>
-        <section>
+        <section> -->
           <!-- keys -->
-        </section>
-        <section>
+        <!-- </section>
+        <section> -->
           <!-- values -->
-        </section>
+        <!-- </section>
       </div>
-    </div>
+    </div> -->
     <footer class="grid-four">
 <!-- footer -->
     </footer>
