@@ -186,7 +186,7 @@ ul {
   margin: 0 1rem;
 }
 
-li {
+ul#deck-list li {
   font-size: 0.75rem;
   margin: 1rem 0;
   border-bottom:#09092d 0.5px solid;
