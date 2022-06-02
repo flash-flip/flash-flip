@@ -59,7 +59,6 @@ function handleClick(e) {
   backCard.textContent = retrievedDecks[currentDeck][cardCounter].back;
   //update card tracker
   cardTracker();
-  console.log(max);
 }
 
 function handleSubmit(e) {
@@ -74,7 +73,6 @@ function handleSubmit(e) {
       deckTitle.textContent = e.target.name.value;
       //update card tracker
       cardTracker();
-      console.log(max);
     }
   }
 }

@@ -3,6 +3,7 @@ body {
   color: #f6f7fb;
   margin: 10px auto;
   max-width: 900px;
+  font-family: 'Lato', sans-serif;
 }
 
 /* navbar styling */
@@ -39,6 +40,7 @@ nav div:first-child{
   margin: auto 0;
   margin-left: 1%;
   font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -88,8 +90,17 @@ nav div:last-child:hover{
 }
 
 /* FlashCard & Sidebar Container */
+
+#deck-title {
+  width: 75%;
+  margin-left: 25%;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
 section.flashcard-container{
-  margin-top: 30px;
   display: flex;
   min-height: 400px;
 }
@@ -97,13 +108,16 @@ section.flashcard-container{
 div.sidebar{
   /* border: 1px blue solid; */
   width: 25%;
+  height: auto;
 }
 
 .flash-card-container {
   width: 70%;
   height: 350px;
-  margin: auto;
-  margin: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .flip-card {
@@ -143,6 +157,7 @@ div.sidebar{
 #front-card, #back-card {
   height: auto;
   font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .flip-card-back {
@@ -171,7 +186,6 @@ div.sidebar{
 }
 
 /* Side bar */
-
 .sidebar {
   background-color: #2e3856;
   border-radius: 5px;
@@ -179,7 +193,8 @@ div.sidebar{
 
 .sidebar p{
   font-size: 2rem;
-  margin-bottom: 1.75rem;
+  margin: 1rem 0 1.75rem 1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
