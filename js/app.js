@@ -56,10 +56,10 @@ deckName.addEventListener('submit',handleDeckName);
 
 let backgroundMode = 0;
 
-document.getElementsByTagName('button')[0].onclick = function () {
+document.getElementById('change-background').onclick = function () {
   if (backgroundMode === 0) {
-    document.getElementById('day-night').style.backgroundColor = '#ffffff';
-    localStorage.bgcolor = '#ffffff';
+    document.getElementById('day-night').style.backgroundColor = '#2e3857';
+    localStorage.bgcolor = '#2e3857';
     backgroundMode = 1;
     document.getElementById('change-background').innerHTML = 'Day Mode';
   } else {
@@ -71,9 +71,9 @@ document.getElementsByTagName('button')[0].onclick = function () {
 };
 
 //load the bgColor on page load:
-document.getElementById('day-night').style.backgroundColor = localStorage.bgcolor || '#ffffff';
+document.getElementById('day-night').style.backgroundColor = localStorage.bgcolor || '#2e3857';
 
-if (localStorage.bgcolor === '#ffffff'){
+if (localStorage.bgcolor === 'grey'){
   document.getElementById('change-background').innerHTML = 'Day Mode';
 } else {
   document.getElementById('change-background').innerHTML = 'Night Mode';

@@ -91,7 +91,7 @@ flipCard.addEventListener('click', handleToggle);
 
 let backgroundMode = 0;
 
-document.getElementsByTagName('button')[0].onclick = function () {
+document.getElementById('change-background').onclick = function () {
   if (backgroundMode === 0) {
     document.getElementById('day-night').style.backgroundColor = '#ffffff';
     localStorage.bgcolor = '#ffffff';
