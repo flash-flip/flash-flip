@@ -1,3 +1,5 @@
+'use strict';
+
 // Access DOM
 let frontCard = document.getElementById('front-card');
 let backCard = document.getElementById('back-card');
@@ -28,11 +30,9 @@ function cardTracker(){
 // Create Deck List
 for(let i = 0; i < parsedKeys.length; i++){
   let liElement = document.createElement('li');
-  // liElement.textContent = parsedKeys[i];
   liElement.innerHTML = `<i class="fa-solid fa-layer-group"></i> ${parsedKeys[i]}`;
   deckList.appendChild(liElement);
 }
-// liElement.setAttribute('id', 'li-style');
 
 // Event Handlers
 let cardCounter = 0;
@@ -65,12 +65,14 @@ function handleClick(e) {
 function handleSubmit(e) {
   e.preventDefault();
 
-  for (let i = 0; i < parsedKeys.length; i++){
+  for (let i=0;i<parsedKeys.length;i++){
     if (e.target.name.value.toLowerCase() === parsedKeys[i].toLowerCase()){
       frontCard.textContent = retrievedDecks[i][0].front;
       backCard.textContent = retrievedDecks[i][0].back;
-      currentDeck = i;
-      //rename headed based on selected deck
+      currentDeck=i;
+      max = retrievedDecks[currentDeck].length - 1;
+      cardCounter=0;
+      //rename header based on selected deck
       deckTitle.textContent = e.target.name.value;
       //update card tracker
       cardTracker();

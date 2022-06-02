@@ -21,7 +21,7 @@ if(retrievedKeys){
     keys.push(parsedKeys[i]);
   }
   console.log(retrievedDecks);
-} 
+}
 
 //constructor function - make new deck
 function Card(front,back){
@@ -31,6 +31,7 @@ function Card(front,back){
   newDeck.push(this);
 }
 
+//event handlers
 function handleAddCard(event){
   event.preventDefault();
 
@@ -52,3 +53,22 @@ function handleDeckName(event){
 
 cardForm.addEventListener('submit',handleAddCard);
 deckName.addEventListener('submit',handleDeckName);
+
+let backgroundMode = 0;
+
+document.getElementsByTagName('button')[0].onclick = function () {
+  if (backgroundMode === 0) {
+    document.getElementById('day-night').style.backgroundColor = '#ffffff';
+    localStorage.bgcolor = '#ffffff';
+    backgroundMode = 1;
+    document.getElementById('change-background').innerHTML = 'Day Mode';
+  } else {
+    document.getElementById('day-night').style.backgroundColor = '#09092d';
+    localStorage.bgcolor = '#09092d';
+    backgroundMode = 0;
+    document.getElementById('change-background').innerHTML = 'Night Mode';
+  }
+};
+
+//load the bgColor on page load:
+document.getElementById('day-night').style.backgroundColor = localStorage.bgcolor || '#ffffff';

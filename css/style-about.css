@@ -6,6 +6,7 @@ body {
   height: 100vh;
 }
 
+/* navbar styling */
 header {
   border-bottom: gray 1px solid;
   width: 100%;
@@ -147,6 +148,7 @@ section.logo img {
   margin: 0 auto;
 }
 
+/* footer */
 footer {
   display: flex;
   justify-content: space-between;
