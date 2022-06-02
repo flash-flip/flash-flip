@@ -21,7 +21,7 @@ if(retrievedKeys){
     keys.push(parsedKeys[i]);
   }
   console.log(retrievedDecks);
-} 
+}
 
 //constructor function - make new deck
 function Card(front,back){
@@ -31,6 +31,7 @@ function Card(front,back){
   newDeck.push(this);
 }
 
+//event handlers
 function handleAddCard(event){
   event.preventDefault();
 
