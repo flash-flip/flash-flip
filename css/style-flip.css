@@ -23,16 +23,16 @@ nav a:link{
   color:#f6f7fb;
 }
 
-nav a:visited{
-  text-decoration: none;
-  color:#f6f7fb;
-}
+  nav a:visited{
+    text-decoration: none;
+    color:#f6f7fb;
+  }
 
-nav a:hover{
-  text-decoration: none;
-  border-bottom: white 5px solid;
-  padding: 1em;
-}
+  nav a:hover{
+    text-decoration: none;
+    border-bottom: white 5px solid;
+    padding: 1em;
+  }
 
 nav div:first-child{
   color: #f6f7fb;
@@ -106,6 +106,7 @@ section.flashcard-container{
 }
 
 div.sidebar{
+  /* border: 1px blue solid; */
   width: 25%;
   height: auto;
 }
@@ -242,10 +243,10 @@ label {
   box-shadow: 1px 1px 1px 1px #09092d;
 }
 
-.deck-btn:hover{
-  background-color: #1a29b9;
-  cursor: pointer;
-}
+  .deck-btn:hover{
+    background-color: #1a29b9;
+    cursor: pointer;
+  }
 
 /* footer */
 footer {
@@ -300,4 +301,3 @@ footer {
   border-radius: 2px;
   transition: 300ms;
 }
-
