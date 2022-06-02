@@ -58,8 +58,8 @@ let backgroundMode = 0;
 
 document.getElementById('change-background').onclick = function () {
   if (backgroundMode === 0) {
-    document.getElementById('day-night').style.backgroundColor = '#2e3857';
-    localStorage.bgcolor = '#2e3857';
+    document.getElementById('day-night').style.backgroundColor = '#586ca7';
+    localStorage.bgcolor = '#586ca7';
     backgroundMode = 1;
     document.getElementById('change-background').innerHTML = 'Day Mode';
   } else {
@@ -71,9 +71,9 @@ document.getElementById('change-background').onclick = function () {
 };
 
 //load the bgColor on page load:
-document.getElementById('day-night').style.backgroundColor = localStorage.bgcolor || '#2e3857';
+document.getElementById('day-night').style.backgroundColor = localStorage.bgcolor || '#586ca7';
 
-if (localStorage.bgcolor === 'grey'){
+if (localStorage.bgcolor === '#586ca7'){
   document.getElementById('change-background').innerHTML = 'Day Mode';
 } else {
   document.getElementById('change-background').innerHTML = 'Night Mode';
