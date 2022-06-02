@@ -59,22 +59,21 @@ function handleClick(e) {
   backCard.textContent = retrievedDecks[currentDeck][cardCounter].back;
   //update card tracker
   cardTracker();
-  console.log(max);
 }
 
 function handleSubmit(e) {
   e.preventDefault();
 
-  for (let i = 0; i < parsedKeys.length; i++){
+  for (let i=0;i<parsedKeys.length;i++){
     if (e.target.name.value.toLowerCase() === parsedKeys[i].toLowerCase()){
       frontCard.textContent = retrievedDecks[i][0].front;
       backCard.textContent = retrievedDecks[i][0].back;
-      currentDeck = i;
+      currentDeck=i;
+      cardCounter=0;
       //rename headed based on selected deck
       deckTitle.textContent = e.target.name.value;
       //update card tracker
       cardTracker();
-      console.log(max);
     }
   }
 }
