@@ -94,28 +94,40 @@ main {
 }
 
 section {
+  border-top: gray 1px solid;
+  border-bottom: gray 1px solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-top: 30px;
   overflow: auto;
+}
+
+i {
+  font-style: italic;
 }
 
 section.scottie img {
   float: left;
   margin-right: 30px;
+  height: 200px;
 }
 
 section.elaine img {
   float: right;
   margin-left: 30px;
+  height: 200px;
 }
 
 section.matthew img {
   float: left;
   margin-right: 30px;
+  height: 200px;
 }
 
 section.alec img {
   float: right;
   margin-left: 30px;
+  height: 200px;
 }
 
 section.logo {
@@ -155,6 +167,8 @@ footer {
   border-top: gray 1px solid;
   color: #f6f7fb;
   height: 160px;
+  padding-top: 10px;
+  padding-left: 5px;
 }
 
 .footer-nav {
