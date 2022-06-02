@@ -39,6 +39,8 @@ let currentDeck = 0;
 
 let max = retrievedDecks[currentDeck].length - 1;
 let min = 0;
+console.log(max);
+
 function handleClick(e) {
   if (e.target.value === 'right-arrow') {
     cardCounter++;
@@ -57,6 +59,7 @@ function handleClick(e) {
   backCard.textContent = retrievedDecks[currentDeck][cardCounter].back;
   //update card tracker
   cardTracker();
+  console.log(max);
 }
 
 function handleSubmit(e) {
@@ -71,6 +74,7 @@ function handleSubmit(e) {
       deckTitle.textContent = e.target.name.value;
       //update card tracker
       cardTracker();
+      console.log(max);
     }
   }
 }
