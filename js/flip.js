@@ -65,11 +65,13 @@ function handleClick(e) {
 function handleSubmit(e) {
   e.preventDefault();
 
-  for (let i = 0; i < parsedKeys.length; i++){
+  for (let i=0;i<parsedKeys.length;i++){
     if (e.target.name.value.toLowerCase() === parsedKeys[i].toLowerCase()){
       frontCard.textContent = retrievedDecks[i][0].front;
       backCard.textContent = retrievedDecks[i][0].back;
-      currentDeck = i;
+      currentDeck=i;
+      max = retrievedDecks[currentDeck].length - 1;
+      cardCounter=0;
       //rename headed based on selected deck
       deckTitle.textContent = e.target.name.value;
       //update card tracker
