@@ -52,3 +52,30 @@ function handleDeckName(event){
 
 cardForm.addEventListener('submit',handleAddCard);
 deckName.addEventListener('submit',handleDeckName);
+
+//let button1 = document.getElementById("light");
+
+//button1.addEventListener("click", function(){
+  //document.body.classList.toggle("light-mode");
+  //localStorage.setItem("light-mode");
+//})
+
+let backgroundMode = 0;
+
+  document.getElementsByTagName('button')[0].onclick=function() {
+    if (backgroundMode == 0) {
+      document.getElementById('day-night').style.backgroundColor='#ffffff';
+      localStorage.bgcolor = '#ffffff';
+      backgroundMode = 1;
+      document.getElementById('change-background').innerHTML='Day Mode';
+    } else {
+      document.getElementById('day-night').style.backgroundColor='#09092d';
+      localStorage.bgcolor = '#09092d';
+      backgroundMode = 0;
+      document.getElementById('change-background').innerHTML='Night Mode';
+    }
+  }
+
+  //load the bgColor on page load:
+  document.getElementById('day-night').style.backgroundColor=localStorage.bgcolor || '#ffffff'
+

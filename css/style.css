@@ -9,6 +9,7 @@ header {
   border-bottom: gray 1px solid;
   width: 100%;
   height: 50px;
+  background-color:#09092d;
 }
 
 nav {
@@ -92,6 +93,7 @@ section.logo{
   margin-bottom: 30px;
   border: grey 1px dashed;
   display: flex;
+  background-color:#09092d;
 }
 
 section.logo b{
