@@ -72,3 +72,9 @@ document.getElementsByTagName('button')[0].onclick = function () {
 
 //load the bgColor on page load:
 document.getElementById('day-night').style.backgroundColor = localStorage.bgcolor || '#ffffff';
+
+if (localStorage.bgcolor === '#ffffff'){
+  document.getElementById('change-background').innerHTML = 'Day Mode';
+} else {
+  document.getElementById('change-background').innerHTML = 'Night Mode';
+}
