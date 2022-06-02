@@ -214,3 +214,19 @@ footer {
   border-radius: 2px;
   transition: 300ms;
 }
+
+@media (max-width: 900px) {
+  /* p {
+    color: red;
+  } */
+  
+  nav {
+    width: 900px;
+    position: sticky;
+  }
+
+  section {
+    width: 900px;
+  }
+
+}
