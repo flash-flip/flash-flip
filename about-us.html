@@ -58,6 +58,32 @@
       <div><a href="./index.html#card-form">Create +</a></div>
     </nav>
   </footer>
+  <script>
+    let backgroundMode = 0;
+
+    document.getElementsByTagName('button')[0].onclick = function () {
+      if (backgroundMode === 0) {
+        document.getElementById('day-night').style.backgroundColor = '#ffffff';
+        localStorage.bgcolor = '#ffffff';
+        backgroundMode = 1;
+        document.getElementById('change-background').innerHTML = 'Day Mode';
+      } else {
+        document.getElementById('day-night').style.backgroundColor = '#09092d';
+        localStorage.bgcolor = '#09092d';
+        backgroundMode = 0;
+        document.getElementById('change-background').innerHTML = 'Night Mode';
+      }
+    };
+
+    //load the bgColor on page load:
+    document.getElementById('day-night').style.backgroundColor = localStorage.bgcolor || '#ffffff';
+
+    if (localStorage.bgcolor === '#ffffff'){
+      document.getElementById('change-background').innerHTML = 'Day Mode';
+    } else {
+      document.getElementById('change-background').innerHTML = 'Night Mode';
+    }
+  </script>
   <script src="js/app.js"></script>
 </body>
 </html>
