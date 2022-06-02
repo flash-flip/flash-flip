@@ -69,6 +69,7 @@ function handleSubmit(e) {
       frontCard.textContent = retrievedDecks[i][0].front;
       backCard.textContent = retrievedDecks[i][0].back;
       currentDeck=i;
+      max = retrievedDecks[currentDeck].length - 1;
       cardCounter=0;
       //rename headed based on selected deck
       deckTitle.textContent = e.target.name.value;
