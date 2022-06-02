@@ -2,6 +2,7 @@ body {
   background-color: #09092d;
   margin: 10px auto;
   max-width: 900px;
+  font-family: 'Lato';
 }
 
 /* navbar styling */
@@ -9,6 +10,7 @@ header {
   border-bottom: gray 1px solid;
   width: 100%;
   height: 50px;
+  background-color:#09092d;
 }
 
 nav {
@@ -37,7 +39,9 @@ nav div:first-child{
   width: 10%;
   margin: auto 0;
   margin-left: 1%;
-  font-size: 1.5em;
+  margin-right: 1%;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -92,11 +96,9 @@ section.logo{
   margin-bottom: 30px;
   border: grey 1px dashed;
   display: flex;
+  font-family: 'Roboto', sans-serif;
 }
 
-section.logo b{
-  margin-bottom: 30px;
-}
 
 section.logo p{
   font-size: 1.75em;
@@ -142,6 +144,7 @@ footer {
   border-top: gray 1px solid;
   color: #f6f7fb;
   height: 160px;
+  background-color:#09092d;
 }
 
 .footer-nav {

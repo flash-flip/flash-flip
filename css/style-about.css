@@ -2,6 +2,7 @@ body {
   background-color: #09092d;
   margin: 10px auto;
   max-width: 900px;
+  font-family: 'Lato', sans-serif;
 }
 
 /* navbar styling */
@@ -38,6 +39,7 @@ nav div:first-child {
   margin: auto 0;
   margin-left: 1%;
   font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -128,6 +130,7 @@ section.logo b {
 
 section.logo p {
   font-size: 1.75em;
+  font-family: 'Roboto', sans-serif;;
   color: #f6f7fb;
   margin: auto 0;
   margin-left: 30px;

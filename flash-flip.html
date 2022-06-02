@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style-flip.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deck Viewer</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div>FlashFlip</div>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about-us.html">About Us</a></li>
+<head>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style-flip.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deck Viewer</title>
+</head>
+<body id="day-night">
+  <header>
+    <nav class="navbar">
+      <div>FlashFlip</div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+        <button id="change-background">Toggle Theme</button>
+      </ul>
+      <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
+      <div><a href="./index.html#card-form">Create +</a></div>
+    </nav>
+  </header>
+  <main>
+    <h1 id="deck-title"></h1>
+    <section class="flashcard-container">
+  <!-- sidebar -->
+      <div class="sidebar">
+        <p>FlashDecks</p>
+        <ul id="deck-list">
         </ul>
         <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
         <div><a href="./index.html#card-form">Create +</a></div>

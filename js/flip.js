@@ -10,6 +10,7 @@ let buttons = document.getElementById('button-bar');
 let deckTitle = document.getElementById('deck-title');
 let tracker = document.getElementById('tracker');
 
+
 //access local storage
 let retrievedKeys = localStorage.getItem('keys');
 let parsedKeys = JSON.parse(retrievedKeys);
@@ -42,9 +43,9 @@ let min = 0;
 console.log(max);
 
 function handleClick(e) {
-  if (e.target.value === 'right-arrow') {
+  if (e.target.value === 'right-arrow' || e.target.id === 'right-arrow-icon') {
     cardCounter++;
-  } else if (e.target.value === 'left-arrow') {
+  } else if (e.target.value === 'left-arrow' || e.target.id === 'left-arrow-icon') {
     cardCounter--;
   }
 
