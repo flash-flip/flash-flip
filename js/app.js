@@ -53,13 +53,6 @@ function handleDeckName(event){
 cardForm.addEventListener('submit',handleAddCard);
 deckName.addEventListener('submit',handleDeckName);
 
-//let button1 = document.getElementById("light");
-
-//button1.addEventListener("click", function(){
-  //document.body.classList.toggle("light-mode");
-  //localStorage.setItem("light-mode");
-//})
-
 let backgroundMode = 0;
 
   document.getElementsByTagName('button')[0].onclick=function() {
