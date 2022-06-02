@@ -1,89 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style-flip.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deck Viewer</title>
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div>FlashFlip</div>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about-us.html">About Us</a></li>
-      </ul>
-      <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
-      <div><a href="./index.html#card-form">Create +</a></div>
-    </nav>
-  </header>
-  <main>
-    <h1 id="deck-title">Title Demo</h1>
-    <section class="flashcard-container">
-  <!-- sidebar -->
-      <div class="sidebar">
-        <p>FlashDecks</p>
-        <ul id="deck-list">
+  <head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style-flip.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Viewer</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>FlashFlip</div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
         </ul>
-        <form id="load-deck">
-          <fieldset>
-            <label for="name">Choose a deck</label><br>
-            <div class="search-bar">
-              <input type="text" id="name" name="name">
-              <button class="deck-btn" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </fieldset>
-        </form>
-      </div>
-
-  <!-- Flash card will display here -->
-      <div class="flash-card-container">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front"><p id="front-card"></p></div>
-            <div class="flip-card-back"><p id="back-card"></p></div>
-          </div>
+        <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
+        <div><a href="./index.html#card-form">Create +</a></div>
+      </nav>
+    </header>
+    <main>
+      <h1 id="deck-title">Title Demo</h1>
+      <section class="flashcard-container">
+        <!-- sidebar -->
+        <div class="sidebar">
+          <p>FlashDecks</p>
+          <ul id="deck-list">
+          </ul>
+          <form id="load-deck">
+           <fieldset>
+              <label for="name">Choose a deck</label><br>
+              <div class="search-bar">
+                <input type="text" id="name" name="name">
+                <button class="deck-btn" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </fieldset>
+          </form>
         </div>
-        <section id="button-bar">
-          <div>
-            <button id="left-arrow" value="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+        <!-- Flash card will display here -->
+        <div class="flash-card-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p id="front-card"></p>
+              </div>
+              <div class="flip-card-back">
+                <p id="back-card"></p>
+              </div>
+            </div>
           </div>
-          <div id="tracker"></div>
-          <div>
-            <button id="right-arrow" value="right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-          </div>
-        </section>
-      </div>
-    </section>
-    <div class="grid-three">
- <!-- table to view deck key/value -->
-      <!-- <p>Terms in this set</p>
-      <div>
-        <section> -->
-          <!-- keys -->
-        <!-- </section>
-        <section> -->
-          <!-- values -->
-        <!-- </section>
-      </div>
-    </div> -->
-<!-- footer -->
-  </main>
-  <footer>
-    <p>&copy;FlashFlip 2022</p>
-    <nav class="footer-nav">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about-us.html">About Us</a></li>
-      </ul>
-      <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
-      <div><a href="./index.html#card-form">Create +</a></div>
-    </nav>
-  </footer>
-  <script src="js/flip.js"></script>
-</body>
+          <section id="button-bar">
+            <div>
+              <button id="left-arrow" value="left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+            <div id="tracker"></div>
+            <div>
+              <button id="right-arrow" value="right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </section>
+        </div>
+      </section>
+      <div class="grid-three">
+    </main>
+    <footer>
+      <p>&copy;FlashFlip 2022</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+         <li><a href="./about-us.html">About Us</a></li>
+        </ul>
+        <div><a id="study-btn" href="./flash-flip.html">Study</a></div>
+        <div><a href="./index.html#card-form">Create +</a></div>
+      </nav>
+    </footer>
+    <script src="js/flip.js"></script>
+  </body>
 </html>
