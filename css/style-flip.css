@@ -176,6 +176,9 @@ div.sidebar{
   height: 20px;
   background-color:#2e3856;
   color: #f6f7fb;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #09092d;
+  cursor: pointer;
 }
 
 #right-arrow{
@@ -183,6 +186,9 @@ div.sidebar{
   height: 20px;
   background-color:#2e3856;
   color: #f6f7fb;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #09092d;
+  cursor: pointer;
 }
 
 /* Side bar */
